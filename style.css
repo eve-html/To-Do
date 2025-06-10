@@ -1,0 +1,115 @@
+/* Основной фон и центрирование */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e7ecf2;
+  padding-top: 40px;
+}
+
+/* Карточка со списком */
+.container {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Блок создания задач */
+.create {
+  background-color: #f5f5f5;
+  padding: 16px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Поле ввода */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Кнопки */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357acc;
+}
+
+/* Список задач с прокруткой */
+#taskList {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Отдельная задача */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  background-color: #f0f0f0;
+  word-break: break-word; 
+}
+
+/* Подсветка выполненной задачи */
+.task.done {
+  background-color: #d4f8d4;
+}
+
+/* Текст задачи */
+.task-text {
+  flex: 1;
+  font-size: 16px;
+  word-break: break-word; /* предотвращает выход за границу */
+}
+
+.task-text.done {
+  text-decoration: line-through;
+  color: #333;
+}
+
+/* Кнопки внутри задач */
+.toggle-btn,
+.delete-btn {
+  margin-left: 10px;
+  background-color: #eee;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.toggle-btn:hover {
+  background-color: #d6ffd6;
+}
+
+.delete-btn:hover {
+  background-color: #ffdddd;
+}
