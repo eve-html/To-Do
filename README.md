@@ -8,5 +8,8 @@
 
 ``` npm run server ```
 
-## Сыллка на GitGub
+## Сыллка на GitHub
 <https://github.com/eve-html/To-Do.git>
+
+## Сыллка на GitHub Pages
+<https://eve-html.github.io/To-Do/>
